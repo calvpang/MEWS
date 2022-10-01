@@ -1,6 +1,6 @@
 # Moonquake Emergency Warning System (MEWS)
 
-![MEWS]("MEWS_logo.png")
+![MEWS](https://github.com/calvpang/FMS_Moonquake/blob/main/MEWS_logo.png?raw=true)
 
 This repository contains the Flat Moon Society's submission for the NASA Space Apps 2022 - "Make a Moonquake Map!" Challenge.
 
