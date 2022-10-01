@@ -4,11 +4,42 @@ import csv
 from datetime import datetime
 
 
+def type_convert(raw_type):
+    if raw_type.startswith("A"):
+        # Standard naming
+        return "Deep Moonquake"
+
+    # nakamura
+    elif raw_type in ("sm"):
+        # nakamura
+        return "Shallow Moonquake"
+    elif raw_type in ("dm"):
+        # nakamura
+        return "Deep Moonquake"
+    elif raw_type in ("ai"):
+        # nakamura
+        return "Artifical Impacts"
+
+    # gagnepian
+    elif "LM" in raw_type:
+        # Lunar module
+        return "Artifical Impacts"
+    elif "S-IVB" in raw_type:
+        # Saturn 4
+        return "Artifical Impacts"
+    elif raw_type == "M":
+        return "Meteorite"
+    elif raw_type == "SH":
+        return "Shallow Moonquake"
+    else:
+        print(raw_type)
+
 output_df = pd.DataFrame(
     columns=[
         "Lat",
         "Long",
         "Date",
+        "RawType",
         "Type",
         "Source",
     ]
@@ -22,14 +53,13 @@ for idx, row in df.iterrows():
         "Lat":row["Lat"],
         "Long":row["Long"],
         "Date":date,
-        "Type":row["Type"],
+        "RawType":row["Type"],
+        "Type":type_convert(row["Type"]),
         "Source": "gagnepian_2006_catalog",
     }, ignore_index=True)
 
 df = pd.read_csv('Data/lognonne_2003_catalog.csv')
-print (df)
 for idx, row in df.iterrows():
-    print(row["Date"])
     if row["Date"] == 7704712332:
         # skip incorrect data
         continue
@@ -38,36 +68,35 @@ for idx, row in df.iterrows():
         "Lat":row["Lat"],
         "Long":row["Long"],
         "Date":date,
-        "Type":row["Type"],
+        "RawType":row["Type"],
+        "Type":type_convert(row["Type"]),
         "Source": "lognonne_2003_catalog",
     }, ignore_index=True)
 
 
 df = pd.read_csv('Data/nakamura_1979_sm_locations.csv')
-print (df)
 for idx, row in df.iterrows():
     date_str = f'{row["Year"]}{row["Day"]:03d}{row["H"]:02d}{row["M"]:02d}{row["S"]:02d}'
-    print(date_str)
     date = datetime.strptime(date_str, "%Y%j%H%M%S")
     output_df = output_df.append({
         "Lat":row["Lat"],
         "Long":row["Long"],
         "Date":date,
-        "Type":"sm",
+        "RawType":"sm",
+        "Type":type_convert("sm"),
         "Source": "nakamura_1979_sm_locations",
     }, ignore_index=True)
 
 df = pd.read_csv('Data/nakamura_1983_ai_locations.csv')
-print (df)
 for idx, row in df.iterrows():
     date_str = f'{row["Y"]}{row["JD"]:03d}{row["Hour"]:02d}{row["Min"]:02d}{int((str(row["Sec"])[:2])):02d}'
-    print(date_str)
-    date = datetime.strptime(date_str, "%Y%j%H%M%S")
+    date = datetime.strptime(date_str, "%y%j%H%M%S")
     output_df = output_df.append({
         "Lat":row["Lat"],
         "Long":row["Long"],
         "Date":date,
-        "Type":"ai",
+        "RawType":"ai",
+        "Type":type_convert("ai"),
         "Source": "nakamura_1983_ai_locations",
     }, ignore_index=True)
 
@@ -82,16 +111,17 @@ for idx, row in df.iterrows():
 
 
 df = pd.read_csv('Data/nakamura_2005_dm_locations.csv')
-print (df)
 for idx, row in df.iterrows():
     date = cluster_num[row["A"]]
     output_df = output_df.append({
         "Lat":row["Lat"],
         "Long":row["Long"],
         "Date":date,
-        "Type":"dm",
+        "RawType":"dm",
+        "Type":type_convert("dm"),
         "Source": "nakamura_2005_dm_locations",
     }, ignore_index=True)
 
-print(output_df)
+# print(output_df)
+# print(list(set(output_df["Type"])))
 output_df.to_csv("cleaned_data.csv")
