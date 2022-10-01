@@ -7,7 +7,7 @@ This repository contains the Flat Moon Society's submission for the NASA Space A
 ---
 ## High-Level Project Summary
 
-[MEWS Demo](https://calvpang.github.io/Moonquake_Blog/posts/2022-10-02-MoonGlobe/)
+[MEWS Demo](https://calvpang.github.io/MEWS_Site/posts/2022-10-02-MEWS/)
 
 ## Detailed Project Description
 
