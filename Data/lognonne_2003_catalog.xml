@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch" 
+ schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Observational xmlns="http://pds.nasa.gov/pds4/pds/v1"                                                             
+    xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"                                                                                                                                                        
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"                                                                  
+    xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1  https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">               
+    <Identification_Area>                                                                                                   
+        <logical_identifier>urn:nasa:pds:apollo_seismic_event_catalog:data:lognonne_2003_catalog</logical_identifier>                  
+        <version_id>1.0</version_id>                                                                                        
+        <title>Event Catalog from Lognonne 2003</title>                                                                          
+        <information_model_version>1.12.0.0</information_model_version>                                                      
+        <product_class>Product_Observational</product_class>                                                                
+    </Identification_Area>
+    <Observation_Area>                                                                                                      
+        <Time_Coordinates>                                                                                                  
+            <start_date_time>1969Z</start_date_time>                                                     
+            <stop_date_time>1977Z</stop_date_time>                                                                
+        </Time_Coordinates>                                                                                                 
+        <Investigation_Area>                                                                                                
+            <name>APOLLO 12</name>                                                                                          
+            <type>Mission</type>                                                                                            
+            <Internal_Reference>                                                                                            
+                <lid_reference>urn:nasa:pds:context:investigation:mission.apollo_12</lid_reference>                         
+                <reference_type>data_to_investigation</reference_type>                                                      
+            </Internal_Reference>                                                                                           
+        </Investigation_Area>  
+        <Investigation_Area>                                                                                                
+            <name>APOLLO 14</name>                                                                                          
+            <type>Mission</type>                                                                                            
+            <Internal_Reference>                                                                                            
+                <lid_reference>urn:nasa:pds:context:investigation:mission.apollo_14</lid_reference>                         
+                <reference_type>data_to_investigation</reference_type>                                                      
+            </Internal_Reference>                                                                                           
+        </Investigation_Area>
+        <Investigation_Area>                                                                                                
+            <name>APOLLO 15</name>                                                                                          
+            <type>Mission</type>                                                                                            
+            <Internal_Reference>                                                                                            
+                <lid_reference>urn:nasa:pds:context:investigation:mission.apollo_15</lid_reference>                         
+                <reference_type>data_to_investigation</reference_type>                                                      
+            </Internal_Reference>                                                                                           
+        </Investigation_Area>          
+        <Investigation_Area>                                                                                                
+            <name>APOLLO 16</name>                                                                                          
+            <type>Mission</type>                                                                                            
+            <Internal_Reference>                                                                                            
+                <lid_reference>urn:nasa:pds:context:investigation:mission.apollo_16</lid_reference>                         
+                <reference_type>data_to_investigation</reference_type>                                                      
+            </Internal_Reference>                                                                                           
+        </Investigation_Area>
+        <Observing_System>                                                                                                                                                                                           
+            <Observing_System_Component>                                                                                    
+                <name>APOLLO 12 LUNAR SURFACE EXPERIMENTS PACKAGE</name>                                                                                      
+                <type>Spacecraft</type>                                                                                     
+                <Internal_Reference>                                                                                        
+                    <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.a12a</lid_reference>                      
+                    <reference_type>is_instrument_host</reference_type>                                                     
+                </Internal_Reference>                                                                                       
+            </Observing_System_Component>
+            <Observing_System_Component>                                                                                    
+                <name>APOLLO 14 LUNAR SURFACE EXPERIMENTS PACKAGE</name>                                                                                      
+                <type>Spacecraft</type>                                                                                     
+                <Internal_Reference>                                                                                        
+                    <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.a14a</lid_reference>                      
+                    <reference_type>is_instrument_host</reference_type>                                                     
+                </Internal_Reference>                                                                                       
+            </Observing_System_Component>                                                                                   
+            <Observing_System_Component>                                                                                    
+                <name>APOLLO 15 LUNAR SURFACE EXPERIMENTS PACKAGE</name>                                                                                      
+                <type>Spacecraft</type>                                                                                     
+                <Internal_Reference>                                                                                        
+                    <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.a15a</lid_reference>                      
+                    <reference_type>is_instrument_host</reference_type>                                                     
+                </Internal_Reference>                                                                                       
+            </Observing_System_Component> 
+            <Observing_System_Component>                                                                                    
+                <name>APOLLO 16 LUNAR SURFACE EXPERIMENTS PACKAGE</name>                                                                                      
+                <type>Spacecraft</type>                                                                                     
+                <Internal_Reference>                                                                                        
+                    <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.a16a</lid_reference>                      
+                    <reference_type>is_instrument_host</reference_type>                                                     
+                </Internal_Reference>                                                                                       
+            </Observing_System_Component>                                                                                   
+            <Observing_System_Component>                                                                                    
+                <name>Apollo 12 Passive Seismic Experiment (PSE)</name>                                                                  
+                <type>Instrument</type>                                                                                     
+                <Internal_Reference>                                                                                        
+                    <lid_reference>urn:nasa:pds:context:instrument:pse.a12a</lid_reference>                                  
+                    <reference_type>is_instrument</reference_type>                                                          
+                </Internal_Reference>                                                                                       
+            </Observing_System_Component>
+            <Observing_System_Component>                                                                                    
+                <name>Apollo 14 Passive Seismic Experiment (PSE)</name>                                                                  
+                <type>Instrument</type>                                                                                     
+                <Internal_Reference>                                                                                        
+                    <lid_reference>urn:nasa:pds:context:instrument:pse.a14a</lid_reference>                                  
+                    <reference_type>is_instrument</reference_type>                                                          
+                </Internal_Reference>                                                                                       
+            </Observing_System_Component>
+            <Observing_System_Component>                                                                                    
+                <name>Apollo 15 Passive Seismic Experiment (PSE)</name>                                                                  
+                <type>Instrument</type>                                                                                     
+                <Internal_Reference>                                                                                        
+                    <lid_reference>urn:nasa:pds:context:instrument:pse.a15a</lid_reference>                                  
+                    <reference_type>is_instrument</reference_type>                                                          
+                </Internal_Reference>                                                                                       
+            </Observing_System_Component>
+            <Observing_System_Component>                                                                                    
+                <name>Apollo 16 Passive Seismic Experiment (PSE)</name>                                                                  
+                <type>Instrument</type>                                                                                     
+                <Internal_Reference>                                                                                        
+                    <lid_reference>urn:nasa:pds:context:instrument:pse.a16a</lid_reference>                                  
+                    <reference_type>is_instrument</reference_type>                                                          
+                </Internal_Reference>                                                                                       
+            </Observing_System_Component>
+        </Observing_System>        
+        <Target_Identification>                                                                                             
+            <name>Moon</name>                                                                                               
+            <type>Satellite</type>                                                                                             
+            <Internal_Reference>                                                                                            
+                <lid_reference>urn:nasa:pds:context:target:satellite.earth.moon</lid_reference>                                      
+                <reference_type>data_to_target</reference_type>                                                             
+            </Internal_Reference>                                                                                           
+        </Target_Identification>                                                                                            
+    </Observation_Area>
+    <Reference_List>                                                                                                      
+        <External_Reference>                                                                                                
+            <doi>10.1016/S0012-821X(03)00172-9</doi>                                                                              
+            <reference_text>                                                                                                
+                Lognonne, Philippe, et al. (2003), A New Seismic Model of the Moon: Implications for structure, thermal evolution
+                and formation of the Moon, Earth and Planetary Science Letters, 211, 27-44, doi:10.1016/S0012-821X(03)00172-9.                                             
+            </reference_text>                                                                                               
+        </External_Reference>                                                                                                        
+        <External_Reference>                                                                                                
+            <doi>10.1029/JB088iB01p00677</doi>                                                                              
+            <reference_text>                                                                                                
+                Nakamura, Y. (1983), Seismic Velocity Structure of the Lunar Mantle, J. Geophys. Res., 88, B1, 677-686,
+                doi:10.1029/JB088iB01p00677.                                             
+            </reference_text>                                                                                               
+        </External_Reference>                                                                                                        
+    </Reference_List>                                                                                                           
+    <File_Area_Observational>
+        <File>
+            <file_name>lognonne_2003_catalog.csv</file_name>
+            <creation_date_time>2018-08-16T02:34:00</creation_date_time>
+            <comment>This paper was written before A10 and A24 were found to be the same cluster. Nakamura kept A10 and reclassified
+            all A24 events as A10.</comment>
+        </File>
+        <Header>
+            <name>Column Headings</name>
+            <offset unit="byte">0</offset>
+            <object_length unit="byte">161</object_length>
+            <parsing_standard_id>PDS DSV 1</parsing_standard_id>
+            <description>Comma-separated names of columns in the data table.</description>
+        </Header>
+        <Table_Delimited>
+            <name>Event Catalog from Lognonne 2003</name>
+            <offset unit="byte">161</offset>
+            <parsing_standard_id>PDS DSV 1</parsing_standard_id>
+            <records>59</records>
+            <record_delimiter>Carriage-Return Line-Feed</record_delimiter>
+            <field_delimiter>Comma</field_delimiter>
+            <Record_Delimited>
+                <fields>27</fields>
+                <groups>0</groups>
+                <Field_Delimited>
+                    <name>Type</name>
+                    <field_number>1</field_number>
+                    <data_type>ASCII_String</data_type>
+                    <description>Event type.
+                        M = natural impacts
+                        Axx = deep Moonquakes
+                        SH = shallow moonquakes
+                        Others are artificial impacts.
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>Lat</name>
+                    <field_number>2</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Latitude, degrees north.
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>Long</name>
+                    <field_number>3</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Longitude, degrees east.
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>Depth</name>
+                    <field_number>4</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Depth in kilometers.
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>Phi</name>
+                    <field_number>5</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Error elipse - Phi.
+                        Angle of the major axis with respect to east-west, in degrees.
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>Delta-a</name>
+                    <field_number>6</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Error elipse - Delta a.
+                        Angle of the major axis with respect to the semi-major axis, in degrees.
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>Delta-b</name>
+                    <field_number>7</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Error elipse - Delta b.
+                        Angle of the major axis with respect to the semi-minor axis, in degrees.
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>Depth_err</name>
+                    <field_number>8</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Error in depth (km).
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>Date</name>
+                    <field_number>9</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Date (YYMMDDHHMM).
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>Seconds</name>
+                    <field_number>10</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Event time in seconds.
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>Time_err</name>
+                    <field_number>11</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Error in event time.
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>12P</name>
+                    <field_number>12</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>P arrival time at Apollo 12.
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>12P_EC</name>
+                    <field_number>13</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Error code for 12P.
+                        0 = error smaller than 1 second
+                        1 = error smaller than 3 seconds
+                        2 = error smaller than 10 seconds.
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>14P</name>
+                    <field_number>14</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>P arrival time at Apollo 14.
+                    </description>
+                </Field_Delimited>              
+                <Field_Delimited>
+                    <name>14P_EC</name>
+                    <field_number>15</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Error code for 14P.
+                        0 = error smaller than 1 second
+                        1 = error smaller than 3 seconds
+                        2 = error smaller than 10 seconds.
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>15P</name>
+                    <field_number>16</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>P arrival time at Apollo 15.
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>15P_EC</name>
+                    <field_number>17</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Error code for 15P.
+                        0 = error smaller than 1 second
+                        1 = error smaller than 3 seconds
+                        2 = error smaller than 10 seconds.
+                    </description>
+                </Field_Delimited>              
+                <Field_Delimited>
+                    <name>16P</name>
+                    <field_number>18</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>P arrival time at Apollo 16.
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>16P_EC</name>
+                    <field_number>19</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Error code for 16P.
+                        0 = error smaller than 1 second
+                        1 = error smaller than 3 seconds
+                        2 = error smaller than 10 seconds.
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>12S</name>
+                    <field_number>20</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>S arrival time at Apollo 12.
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>12S_EC</name>
+                    <field_number>21</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Error code for 12S.
+                        0 = error smaller than 1 second
+                        1 = error smaller than 3 seconds
+                        2 = error smaller than 10 seconds.
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>14S</name>
+                    <field_number>22</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>S arrival time at Apollo 14.
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>14S_EC</name>
+                    <field_number>23</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Error code for 14S.
+                        0 = error smaller than 1 second
+                        1 = error smaller than 3 seconds
+                        2 = error smaller than 10 seconds.
+                    </description>
+                </Field_Delimited>                              
+                <Field_Delimited>
+                    <name>15S</name>
+                    <field_number>24</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>S arrival time at Apollo 15.
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>15S_EC</name>
+                    <field_number>25</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Error code for 15S.
+                        0 = error smaller than 1 second
+                        1 = error smaller than 3 seconds
+                        2 = error smaller than 10 seconds.
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>16S</name>
+                    <field_number>26</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>S arrival time at Apollo 16.
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>16S_EC</name>
+                    <field_number>27</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Error code for 16S.
+                        0 = error smaller than 1 second
+                        1 = error smaller than 3 seconds
+                        2 = error smaller than 10 seconds.
+                    </description>
+                </Field_Delimited>
+            </Record_Delimited>
+        </Table_Delimited>
+    </File_Area_Observational>
+</Product_Observational>

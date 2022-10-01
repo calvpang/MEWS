@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch" 
+ schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Observational xmlns="http://pds.nasa.gov/pds4/pds/v1"                                                             
+    xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"                                                                                                                                                        
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"                                                                  
+    xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1  https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">               
+    <Identification_Area>                                                                                                   
+        <logical_identifier>urn:nasa:pds:apollo_seismic_event_catalog:data:levent.1008weber</logical_identifier>                  
+        <version_id>1.0</version_id>                                                                                        
+        <title>Edited Nakamura Moonquake Catalog</title>                                                                   
+        <information_model_version>1.12.0.0</information_model_version>                                                      
+        <product_class>Product_Observational</product_class>                                                                
+    </Identification_Area>
+    <Observation_Area>                                                                                                      
+        <Time_Coordinates>                                                                                                  
+            <start_date_time>1969Z</start_date_time>                                                     
+            <stop_date_time>1977Z</stop_date_time>                                                                
+        </Time_Coordinates>                                                                                                 
+        <Investigation_Area>                                                                                                
+            <name>APOLLO 12</name>                                                                                          
+            <type>Mission</type>                                                                                            
+            <Internal_Reference>                                                                                            
+                <lid_reference>urn:nasa:pds:context:investigation:mission.apollo_12</lid_reference>                         
+                <reference_type>data_to_investigation</reference_type>                                                      
+            </Internal_Reference>                                                                                           
+        </Investigation_Area>  
+        <Investigation_Area>                                                                                                
+            <name>APOLLO 14</name>                                                                                          
+            <type>Mission</type>                                                                                            
+            <Internal_Reference>                                                                                            
+                <lid_reference>urn:nasa:pds:context:investigation:mission.apollo_14</lid_reference>                         
+                <reference_type>data_to_investigation</reference_type>                                                      
+            </Internal_Reference>                                                                                           
+        </Investigation_Area>
+        <Investigation_Area>                                                                                                
+            <name>APOLLO 15</name>                                                                                          
+            <type>Mission</type>                                                                                            
+            <Internal_Reference>                                                                                            
+                <lid_reference>urn:nasa:pds:context:investigation:mission.apollo_15</lid_reference>                         
+                <reference_type>data_to_investigation</reference_type>                                                      
+            </Internal_Reference>                                                                                           
+        </Investigation_Area>          
+        <Investigation_Area>                                                                                                
+            <name>APOLLO 16</name>                                                                                          
+            <type>Mission</type>                                                                                            
+            <Internal_Reference>                                                                                            
+                <lid_reference>urn:nasa:pds:context:investigation:mission.apollo_16</lid_reference>                         
+                <reference_type>data_to_investigation</reference_type>                                                      
+            </Internal_Reference>                                                                                           
+        </Investigation_Area>
+        <Observing_System>                                                                                   
+            <Observing_System_Component>                                                                                    
+                <name>APOLLO 12 LUNAR SURFACE EXPERIMENTS PACKAGE</name>                                                                                      
+                <type>Spacecraft</type>                                                                                     
+                <Internal_Reference>                                                                                        
+                    <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.a12a</lid_reference>                      
+                    <reference_type>is_instrument_host</reference_type>                                                     
+                </Internal_Reference>                                                                                       
+            </Observing_System_Component>
+            <Observing_System_Component>                                                                                    
+                <name>APOLLO 14 LUNAR SURFACE EXPERIMENTS PACKAGE</name>                                                                                      
+                <type>Spacecraft</type>                                                                                     
+                <Internal_Reference>                                                                                        
+                    <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.a14a</lid_reference>                      
+                    <reference_type>is_instrument_host</reference_type>                                                     
+                </Internal_Reference>                                                                                       
+            </Observing_System_Component>                                                                                   
+            <Observing_System_Component>                                                                                    
+                <name>APOLLO 15 LUNAR SURFACE EXPERIMENTS PACKAGE</name>                                                                                      
+                <type>Spacecraft</type>                                                                                     
+                <Internal_Reference>                                                                                        
+                    <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.a15a</lid_reference>                      
+                    <reference_type>is_instrument_host</reference_type>                                                     
+                </Internal_Reference>                                                                                       
+            </Observing_System_Component> 
+            <Observing_System_Component>                                                                                    
+                <name>APOLLO 16 LUNAR SURFACE EXPERIMENTS PACKAGE</name>                                                                                      
+                <type>Spacecraft</type>                                                                                     
+                <Internal_Reference>                                                                                        
+                    <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.a16a</lid_reference>                      
+                    <reference_type>is_instrument_host</reference_type>                                                     
+                </Internal_Reference>                                                                                       
+            </Observing_System_Component>
+            <Observing_System_Component>                                                                                    
+                <name>Apollo 12 Passive Seismic Experiment (PSE)</name>                                                                  
+                <type>Instrument</type>                                                                                     
+                <Internal_Reference>                                                                                        
+                    <lid_reference>urn:nasa:pds:context:instrument:pse.a12a</lid_reference>                                  
+                    <reference_type>is_instrument</reference_type>                                                          
+                </Internal_Reference>                                                                                       
+            </Observing_System_Component>
+            <Observing_System_Component>                                                                                    
+                <name>Apollo 14 Passive Seismic Experiment (PSE)</name>                                                                  
+                <type>Instrument</type>                                                                                     
+                <Internal_Reference>                                                                                        
+                    <lid_reference>urn:nasa:pds:context:instrument:pse.a14a</lid_reference>                                  
+                    <reference_type>is_instrument</reference_type>                                                          
+                </Internal_Reference>                                                                                       
+            </Observing_System_Component>
+            <Observing_System_Component>                                                                                    
+                <name>Apollo 15 Passive Seismic Experiment (PSE)</name>                                                                  
+                <type>Instrument</type>                                                                                     
+                <Internal_Reference>                                                                                        
+                    <lid_reference>urn:nasa:pds:context:instrument:pse.a15a</lid_reference>                                  
+                    <reference_type>is_instrument</reference_type>                                                          
+                </Internal_Reference>                                                                                       
+            </Observing_System_Component>
+            <Observing_System_Component>                                                                                    
+                <name>Apollo 16 Passive Seismic Experiment (PSE)</name>                                                                  
+                <type>Instrument</type>                                                                                     
+                <Internal_Reference>                                                                                        
+                    <lid_reference>urn:nasa:pds:context:instrument:pse.a16a</lid_reference>                                  
+                    <reference_type>is_instrument</reference_type>                                                          
+                </Internal_Reference>                                                                                       
+            </Observing_System_Component>             
+        </Observing_System>        
+        <Target_Identification>                                                                                             
+            <name>Moon</name>                                                                                               
+            <type>Satellite</type>                                                                                             
+            <Internal_Reference>                                                                                            
+                <lid_reference>urn:nasa:pds:context:target:satellite.earth.moon</lid_reference>                                      
+                <reference_type>data_to_target</reference_type>                                                             
+            </Internal_Reference>                                                                                           
+        </Target_Identification>                                                                                            
+    </Observation_Area>
+    <Reference_List>                                                                                                        
+        <External_Reference>                                                                                             
+            <doi>10.1029/2005JE002414</doi>                                                                              
+            <reference_text>                                                                                                
+                Bulow, R.C., C.L. Johnson, and P.M. Shearer, 2005, New events discovered in the Apollo lunar seismic data, J.
+                Geophys. Res., 110, E10003, doi:10.1029/2005JE002414.                                              
+            </reference_text>                                                                                               
+        </External_Reference>                                                                                               
+    </Reference_List>                                                                                                           
+    <File_Area_Observational>
+        <File>
+            <file_name>levent.1008weber.csv</file_name>
+            <creation_date_time>2018-08-16T02:34:00</creation_date_time>
+            <comment>levent.1008weber is Dr. Renee Weber's edited version of the moonquake catalog published and curated by Yosio Nakamura at the 
+                University of Texas, Austin, which can be found here: http://www-udc.ig.utexas.edu/external/yosio/PSE/catsrepts/levent.1008. The 
+                only difference is that Weber has copied information (event class) from columns R and S into columns T and U if the latter were blank, 
+                meaning their classification had not changed between Nakamura's pre- and post-2004 versions of the catalog. Additionally, Weber added 
+                "grade" information (everything in column V and beyond), which is a proxy for event quality, as described in Bulow et al., 2005.
+            </comment>
+        </File>
+        <Header>
+            <name>Column Headings</name>
+            <offset unit="byte">0</offset>
+            <object_length unit="byte">170</object_length>
+            <parsing_standard_id>PDS DSV 1</parsing_standard_id>
+            <description>Comma-separated names of columns in the data table.</description>
+        </Header>
+        <Table_Delimited>
+            <name>Edited Nakamura Moonquake Catalog</name>
+            <offset unit="byte">170</offset>
+            <parsing_standard_id>PDS DSV 1</parsing_standard_id>
+            <records>13057</records>
+            <record_delimiter>Carriage-Return Line-Feed</record_delimiter>
+            <field_delimiter>Comma</field_delimiter>
+            <Record_Delimited>
+                <fields>38</fields>
+                <groups>0</groups>
+                <Field_Delimited>
+                    <name>Y</name>
+                    <field_number>1</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Year.</description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>JD</name>
+                    <field_number>2</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Day of the year.</description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>S</name>
+                    <field_number>3</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Signal start time in hours and minutes.</description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>E</name>
+                    <field_number>4</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Signal stop time in hours and minutes; 9999 if signal continues to next event.</description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>A1</name>
+                    <field_number>5</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Signal envelope amplitude in mm for Apollo 11 and 12. Signal envelope amplitudes in mm measured on a 
+                        standard compressed-scale plot.  Z component is used for stations 11 and 12, and Y component is used for all 
+                        the other stations.  Standard compressed plot is produced by first taking the absolute value of the difference 
+                        between consecutive long-period data points, summing them over 40 data points (approx. 6 s), and then plotting 
+                        them at a scale of 157 digital units/cm in alternating polarities to give the appearance of a seismogram.  Four 
+                        columns are assigned to each of Apollo stations 12 (or 11), 14, 15 and 16.</description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>A2</name>
+                    <field_number>6</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Signal envelope amplitude in mm for Apollo 14. Signal envelope amplitudes in mm measured on a standard 
+                        compressed-scale plot.  Z component is used for stations 11 and 12, and Y component is used for all the other 
+                        stations.  Standard compressed plot is produced by first taking the absolute value of the difference between 
+                        consecutive long-period data points, summing them over 40 data points (approx. 6 s), and then plotting them at a 
+                        scale of 157 digital units/cm in alternating polarities to give the appearance of a seismogram.  Four columns are 
+                        assigned to each of Apollo stations 12 (or 11), 14, 15 and 16.</description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>A3</name>
+                    <field_number>7</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Signal envelope amplitude in mm for Apollo 15. Signal envelope amplitudes in mm measured on a standard 
+                        compressed-scale plot.  Z component is used for stations 11 and 12, and Y component is used for all the other 
+                        stations.  Standard compressed plot is produced by first taking the absolute value of the difference between 
+                        consecutive long-period data points, summing them over 40 data points (approx. 6 s), and then plotting them at a 
+                        scale of 157 digital units/cm in alternating polarities to give the appearance of a seismogram.  Four columns are 
+                        assigned to each of Apollo stations 12 (or 11), 14, 15 and 16.</description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>A4</name>
+                    <field_number>8</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Signal envelope amplitude in mm for Apollo 16. Signal envelope amplitudes in mm measured on a standard 
+                        compressed-scale plot.  Z component is used for stations 11 and 12, and Y component is used for all the other 
+                        stations.  Standard compressed plot is produced by first taking the absolute value of the difference between 
+                        consecutive long-period data points, summing them over 40 data points (approx. 6 s), and then plotting them at a 
+                        scale of 157 digital units/cm in alternating polarities to give the appearance of a seismogram.  Four columns are 
+                        assigned to each of Apollo stations 12 (or 11), 14, 15 and 16.</description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>P1</name>
+                    <field_number>9</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Availability of compressed scale plots for Apollo 11 and 12.
+                        1 = Calcomp incremental plotter plot
+                        2 = Versatec matrix plotter plot
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>P2</name>
+                    <field_number>10</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Availability of compressed scale plots for Apollo 14.
+                        1 = Calcomp incremental plotter plot
+                        2 = Versatec matrix plotter plot
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>P3</name>
+                    <field_number>11</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Availability of compressed scale plots for Apollo 15.
+                        1 = Calcomp incremental plotter plot
+                        2 = Versatec matrix plotter plot
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>P4</name>
+                    <field_number>12</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Availability of compressed scale plots for Apollo 16.
+                        1 = Calcomp incremental plotter plot
+                        2 = Versatec matrix plotter plot
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>Q1</name>
+                    <field_number>13</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Data quality code for Apollo 11 and 12.
+                        1 = no data available for the station
+                        2 = noisy data
+                        3 = signal is masked by another, larger event
+                        4 = compressed plot is clipped (original digital data may not be clipped)
+                        5 = see comments
+                        6 = the time recorded with the data is computer-generated, and thus is not exact
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>Q2</name>
+                    <field_number>14</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Data quality code for Apollo 14.
+                        1 = no data available for the station
+                        2 = noisy data
+                        3 = signal is masked by another, larger event
+                        4 = compressed plot is clipped (original digital data may not be clipped)
+                        5 = see comments
+                        6 = the time recorded with the data is computer-generated, and thus is not exact
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>Q3</name>
+                    <field_number>15</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Data quality code for Apollo 15.
+                        1 = no data available for the station
+                        2 = noisy data
+                        3 = signal is masked by another, larger event
+                        4 = compressed plot is clipped (original digital data may not be clipped)
+                        5 = see comments
+                        6 = the time recorded with the data is computer-generated, and thus is not exact
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>Q4</name>
+                    <field_number>16</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Data quality code for Apollo 16.
+                        1 = no data available for the station
+                        2 = noisy data
+                        3 = signal is masked by another, larger event
+                        4 = compressed plot is clipped (original digital data may not be clipped)
+                        5 = see comments
+                        6 = the time recorded with the data is computer-generated, and thus is not exact
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>COMMENTS</name>
+                    <field_number>17</field_number>
+                    <data_type>ASCII_String</data_type>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>T1</name>
+                    <field_number>18</field_number>
+                    <data_type>ASCII_String</data_type>
+                    <description>Event type for original moonquake catalog.
+                        A = classified (matching) deep moonquake
+                        M = unclassified deep moonquake
+                        C = meteoroid impact
+                        H = shallow moonquake
+                        Z = mostly short-period event
+                        L = LM impact
+                        S = S-IVB impact
+                        X = special type
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>N1</name>
+                    <field_number>19</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Deep moonquake cluster number for original moonquake catalog.</description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>T2</name>
+                    <field_number>20</field_number>
+                    <data_type>ASCII_String</data_type>
+                    <description>Event type classification for levent.0704 and levent.1008.
+                        A = deep moonquake with assigned number
+                        T = suspected long-period thermal moonquake with assigned number
+                        M = unclassified deep moonquake
+                        C = meteoroid impact
+                        H = shallow moonquake
+                        Z = mostly short-period event
+                        L = LM impact
+                        S = S-IVB impact
+                        X = special type      
+                        Events with a blank signal stop time (column E), and Apollo 11/12 amplitude (column A1) set to -1 are newly added 
+                        from levent.1008. All other events are from catalog levent.0704.
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>N2</name>
+                    <field_number>21</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Deep moonquake cluster number for levent.0704 and levent.1008.
+                        Events with a blank signal stop time (column E), and Apollo 11/12 amplitude (column A1) set to -1 are newly added 
+                        from levent.1008. All other events are from catalog levent.0704.
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>Grade</name>
+                    <field_number>22</field_number>
+                    <data_type>ASCII_String</data_type>
+                    <description>Event grading by Bulow et al. (2005).
+                        A trace receiving the grade 'A' generally has high signal to noise and an impulsive onset, and seismic phases may 
+                        be visible. A grade 'B' trace has somewhat lower signal to noise and a more gradual emergence, but a distinct
+                        envelope is still evident. A grade 'C' trace has inferior signal to noise and the entire event trace is often 
+                        dominated by amplitudes of a single digital unit, with the event seen as a region in the trace with a greater 
+                        frequency of 1-bit fluctuations between high and low.
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>Traces</name>
+                    <field_number>23</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Number of traces the event is visible on from Bulow et al. (2005).</description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>12LPX</name>
+                    <field_number>24</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Event seen on Apollo 12 LPX?                       
+                        1 = yes, 
+                        blank = unclear.
+                        "1" in Bulow et al. (2005)
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>12LPY</name>
+                    <field_number>25</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Event seen on Apollo 12 LPY?                       
+                        1 = yes, 
+                        blank = unclear.
+                        "2" in Bulow et al. (2005)
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>12LPZ</name>
+                    <field_number>26</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Event seen on Apollo 12 LPZ?                       
+                        1 = yes, 
+                        blank = unclear.
+                        "3" in Bulow et al. (2005)
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>14SPZ</name>
+                    <field_number>27</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Event seen on Apollo 14 SPZ?                       
+                        1 = yes, 
+                        blank = unclear.
+                        "4" in Bulow et al. (2005)
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>14LPX</name>
+                    <field_number>28</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Event seen on Apollo 14 LPX?                       
+                        1 = yes, 
+                        blank = unclear.
+                        "5" in Bulow et al. (2005)
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>14LPY</name>
+                    <field_number>29</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Event seen on Apollo 14 LPY?                       
+                        1 = yes, 
+                        blank = unclear.
+                        "6" in Bulow et al. (2005)
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>14LPZ</name>
+                    <field_number>30</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Event seen on Apollo 14 LPZ?                       
+                        1 = yes, 
+                        blank = unclear.
+                        "7" in Bulow et al. (2005)
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>15SPZ</name>
+                    <field_number>31</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Event seen on Apollo 15 SPZ?                       
+                        1 = yes, 
+                        blank = unclear.
+                        "8" in Bulow et al. (2005)
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>15LPX</name>
+                    <field_number>32</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Event seen on Apollo 15 LPX?                       
+                        1 = yes, 
+                        blank = unclear.
+                        "9" in Bulow et al. (2005)
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>15LPY</name>
+                    <field_number>33</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Event seen on Apollo 15 LPY?                       
+                        1 = yes, 
+                        blank = unclear.
+                        "10" in Bulow et al. (2005)
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>15LPZ</name>
+                    <field_number>34</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Event seen on Apollo 15 LPZ?                       
+                        1 = yes, 
+                        blank = unclear.
+                        "11" in Bulow et al. (2005)
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>16SPZ</name>
+                    <field_number>35</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Event seen on Apollo 16 SPZ?                       
+                        1 = yes, 
+                        blank = unclear.
+                        "12" in Bulow et al. (2005)
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>16LPX</name>
+                    <field_number>36</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Event seen on Apollo 16 LPX?                       
+                        1 = yes, 
+                        blank = unclear.
+                        "13" in Bulow et al. (2005)
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>16LPY</name>
+                    <field_number>37</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Event seen on Apollo 16 LPY?                       
+                        1 = yes, 
+                        blank = unclear.
+                        "14" in Bulow et al. (2005)
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>16LPZ</name>
+                    <field_number>38</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Event seen on Apollo 16 LPZ?                       
+                        1 = yes, 
+                        blank = unclear.
+                        "15" in Bulow et al. (2005)
+                    </description>
+                </Field_Delimited>             
+            </Record_Delimited>
+        </Table_Delimited>
+    </File_Area_Observational>
+</Product_Observational>

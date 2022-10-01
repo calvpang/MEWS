@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch" 
+ schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Observational xmlns="http://pds.nasa.gov/pds4/pds/v1"                                                             
+    xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"                                                                                                                                                        
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"                                                                  
+    xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1  https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">               
+    <Identification_Area>                                                                                                   
+        <logical_identifier>urn:nasa:pds:apollo_seismic_event_catalog:data:nakamura_1979_sm_locations</logical_identifier>                  
+        <version_id>1.0</version_id>                                                                                        
+        <title>Shallow Moonquake Locations from Nakamura 1983</title>                                                                     
+        <information_model_version>1.12.0.0</information_model_version>                                                      
+        <product_class>Product_Observational</product_class>                                                                
+    </Identification_Area>
+    <Observation_Area>                                                                                                    
+        <Time_Coordinates>                                                                                                  
+            <start_date_time>1969Z</start_date_time>                                                     
+            <stop_date_time>1977Z</stop_date_time>                                                                
+        </Time_Coordinates>                                                                                                 
+        <Investigation_Area>                                                                                                
+            <name>APOLLO 12</name>                                                                                          
+            <type>Mission</type>                                                                                            
+            <Internal_Reference>                                                                                            
+                <lid_reference>urn:nasa:pds:context:investigation:mission.apollo_12</lid_reference>                         
+                <reference_type>data_to_investigation</reference_type>                                                      
+            </Internal_Reference>                                                                                           
+        </Investigation_Area>  
+        <Investigation_Area>                                                                                                
+            <name>APOLLO 14</name>                                                                                          
+            <type>Mission</type>                                                                                            
+            <Internal_Reference>                                                                                            
+                <lid_reference>urn:nasa:pds:context:investigation:mission.apollo_14</lid_reference>                         
+                <reference_type>data_to_investigation</reference_type>                                                      
+            </Internal_Reference>                                                                                           
+        </Investigation_Area>
+        <Investigation_Area>                                                                                                
+            <name>APOLLO 15</name>                                                                                          
+            <type>Mission</type>                                                                                            
+            <Internal_Reference>                                                                                            
+                <lid_reference>urn:nasa:pds:context:investigation:mission.apollo_15</lid_reference>                         
+                <reference_type>data_to_investigation</reference_type>                                                      
+            </Internal_Reference>                                                                                           
+        </Investigation_Area>          
+        <Investigation_Area>                                                                                                
+            <name>APOLLO 16</name>                                                                                          
+            <type>Mission</type>                                                                                            
+            <Internal_Reference>                                                                                            
+                <lid_reference>urn:nasa:pds:context:investigation:mission.apollo_16</lid_reference>                         
+                <reference_type>data_to_investigation</reference_type>                                                      
+            </Internal_Reference>                                                                                           
+        </Investigation_Area>
+        <Observing_System>                                                                                                                                                                                           
+            <Observing_System_Component>                                                                                    
+                <name>APOLLO 12 LUNAR SURFACE EXPERIMENTS PACKAGE</name>                                                                                      
+                <type>Spacecraft</type>                                                                                     
+                <Internal_Reference>                                                                                        
+                    <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.a12a</lid_reference>                      
+                    <reference_type>is_instrument_host</reference_type>                                                     
+                </Internal_Reference>                                                                                       
+            </Observing_System_Component>
+            <Observing_System_Component>                                                                                    
+                <name>APOLLO 14 LUNAR SURFACE EXPERIMENTS PACKAGE</name>                                                                                      
+                <type>Spacecraft</type>                                                                                     
+                <Internal_Reference>                                                                                        
+                    <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.a14a</lid_reference>                      
+                    <reference_type>is_instrument_host</reference_type>                                                     
+                </Internal_Reference>                                                                                       
+            </Observing_System_Component>                                                                                   
+            <Observing_System_Component>                                                                                    
+                <name>APOLLO 15 LUNAR SURFACE EXPERIMENTS PACKAGE</name>                                                                                      
+                <type>Spacecraft</type>                                                                                     
+                <Internal_Reference>                                                                                        
+                    <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.a15a</lid_reference>                      
+                    <reference_type>is_instrument_host</reference_type>                                                     
+                </Internal_Reference>                                                                                       
+            </Observing_System_Component> 
+            <Observing_System_Component>                                                                                    
+                <name>APOLLO 16 LUNAR SURFACE EXPERIMENTS PACKAGE</name>                                                                                      
+                <type>Spacecraft</type>                                                                                     
+                <Internal_Reference>                                                                                        
+                    <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.a16a</lid_reference>                      
+                    <reference_type>is_instrument_host</reference_type>                                                     
+                </Internal_Reference>                                                                                       
+            </Observing_System_Component>                                                                                   
+            <Observing_System_Component>                                                                                    
+                <name>Apollo 12 Passive Seismic Experiment (PSE)</name>                                                                  
+                <type>Instrument</type>                                                                                     
+                <Internal_Reference>                                                                                        
+                    <lid_reference>urn:nasa:pds:context:instrument:pse.a12a</lid_reference>                                  
+                    <reference_type>is_instrument</reference_type>                                                          
+                </Internal_Reference>                                                                                       
+            </Observing_System_Component>
+            <Observing_System_Component>                                                                                    
+                <name>Apollo 14 Passive Seismic Experiment (PSE)</name>                                                                  
+                <type>Instrument</type>                                                                                     
+                <Internal_Reference>                                                                                        
+                    <lid_reference>urn:nasa:pds:context:instrument:pse.a14a</lid_reference>                                  
+                    <reference_type>is_instrument</reference_type>                                                          
+                </Internal_Reference>                                                                                       
+            </Observing_System_Component>
+            <Observing_System_Component>                                                                                    
+                <name>Apollo 15 Passive Seismic Experiment (PSE)</name>                                                                  
+                <type>Instrument</type>                                                                                     
+                <Internal_Reference>                                                                                        
+                    <lid_reference>urn:nasa:pds:context:instrument:pse.a15a</lid_reference>                                  
+                    <reference_type>is_instrument</reference_type>                                                          
+                </Internal_Reference>                                                                                       
+            </Observing_System_Component>
+            <Observing_System_Component>                                                                                    
+                <name>Apollo 16 Passive Seismic Experiment (PSE)</name>                                                                  
+                <type>Instrument</type>                                                                                     
+                <Internal_Reference>                                                                                        
+                    <lid_reference>urn:nasa:pds:context:instrument:pse.a16a</lid_reference>                                  
+                    <reference_type>is_instrument</reference_type>                                                          
+                </Internal_Reference>                                                                                       
+            </Observing_System_Component>
+        </Observing_System>        
+        <Target_Identification>                                                                                             
+            <name>Moon</name>                                                                                               
+            <type>Satellite</type>                                                                                             
+            <Internal_Reference>                                                                                            
+                <lid_reference>urn:nasa:pds:context:target:satellite.earth.moon</lid_reference>                                      
+                <reference_type>data_to_target</reference_type>                                                             
+            </Internal_Reference>                                                                                           
+        </Target_Identification>                                                                                            
+    </Observation_Area>
+    <Reference_List>                                                                                                        
+        <External_Reference>                                                                                                
+            <doi>10.1029/JB088iB01p00677</doi>                                                                              
+            <reference_text>                                                                                                
+                Nakamura, Y. et al. (1979), Shallow moonquakes: Depth, distribution and implications as to the present 
+                state of the lunar interior, Tenth Lunar and Planetary Science Conference, Abstract #1316. 
+                https://www.lpi.usra.edu/meetings/lpsc1979/pdf/1316.pdf.
+            </reference_text>                                                                                               
+        </External_Reference>
+        <External_Reference>                                                                                                
+            <doi>10.1029/JB081i026p04818</doi>                                                                              
+            <reference_text>                                                                                                
+                Nakamura, Y. et al. (1976), Structure of the Lunar Mantle, J. Geophys. Res., 81, no. 26, 4818-4824, 
+                doi:10.1029/JB081i026p04818.                                           
+            </reference_text>                                                                                               
+        </External_Reference> 
+    </Reference_List>                                                                                                           
+    <File_Area_Observational>
+        <File>
+            <file_name>nakamura_1979_sm_locations.csv</file_name>
+            <creation_date_time>2018-08-16T02:34:00</creation_date_time>
+        </File>
+        <Header>
+            <name>Column Headings</name>
+            <offset unit="byte">0</offset>
+            <object_length unit="byte">45</object_length>
+            <parsing_standard_id>PDS DSV 1</parsing_standard_id>
+            <description>Comma-separated names of columns in the data table.</description>
+        </Header>
+        <Table_Delimited>
+            <name>Shallow Moonquake Locations from Nakamura 1983</name>
+            <offset unit="byte">45</offset>
+            <parsing_standard_id>PDS DSV 1</parsing_standard_id>
+            <records>28</records>
+            <record_delimiter>Carriage-Return Line-Feed</record_delimiter>
+            <field_delimiter>Comma</field_delimiter>
+            <Record_Delimited>
+                <fields>9</fields>
+                <groups>0</groups>
+                <Field_Delimited>
+                    <name>Year</name>
+                    <field_number>1</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Year (yyyy).
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>Day</name>
+                    <field_number>2</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Day of the year.
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>H</name>
+                    <field_number>3</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Origin time hour (hh).
+                        Estimated using Model LM-761 (Nakamura et al., 1976) and assuming 100 km depth of focus.
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>M</name>
+                    <field_number>4</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Origin time minute (mm).
+                       Estimated using Model LM-761 (Nakamura et al., 1976) and assuming 100 km depth of focus.
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>S</name>
+                    <field_number>5</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Origin time second (ss).
+                        Estimated using Model LM-761 (Nakamura et al., 1976) and assuming 100 km depth of focus.
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>Lat</name>
+                    <field_number>6</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Latitude, degrees north.
+                        Origin times and epicenters were estimated using Model LM-761 (Nakamura et al., 1976) and 
+                        assuming 100 km depth of focus.  Though the epicenters are given to the nearest degree, 
+                        they are not accurate to 1 degree, especially for smaller events.
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>Long</name>
+                    <field_number>7</field_number>
+                    <data_type>ASCII_Integer</data_type>
+                    <description>Longitude, degrees east.
+                        Origin times and epicenters were estimated using Model LM-761 (Nakamura et al., 1976) and 
+                        assuming 100 km depth of focus.  Though the epicenters are given to the nearest degree, 
+                        they are not accurate to 1 degree, especially for smaller events.
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>Magnitude</name>
+                    <field_number>8</field_number>
+                    <data_type>ASCII_Real</data_type>
+                    <description>Magnitude.
+                        Magnitude defined by log (SPZ envelope amplitude di DU reduced to 60 degrees distance).  
+                        They are estimated to be approximately 1.0 less than Richter magnitude.
+                    </description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>Comments</name>
+                    <field_number>9</field_number>
+                    <data_type>ASCII_String</data_type>
+                    <description>Comments for latitude and longitude fields. In the original table, these were listed as footnotes.
+                    </description>
+                </Field_Delimited>
+            </Record_Delimited>
+        </Table_Delimited>
+    </File_Area_Observational>
+</Product_Observational>
