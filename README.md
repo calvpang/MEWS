@@ -6,7 +6,7 @@ This repository contains the Flat Moon Society's submission for the NASA Space A
 
 [MEWS Demo](https://calvpang.github.io/MEWS_Site/posts/2022-10-02-MEWS/)
 
-[MEWS Video](https://www.youtube.com)
+[MEWS Video](https://youtu.be/wsJTLDNWOQ8)
 
 ---
 ## High-Level Project Summary
