@@ -2,7 +2,7 @@
 
 ![MEWS](https://github.com/calvpang/FMS_Moonquake/blob/main/Images/MEWS_logo/MEWS%20logo.png?raw=true)
 
-This repository contains the Flat Moon Society's submission for the NASA Space Apps 2022 - "Make a Moonquake Map!" Challenge.
+This repository contains the Flat Moon Society's [submission](https://2022.spaceappschallenge.org/challenges/2022-challenges/moonquake-map/teams/flat-moon-society-aus/project) for the NASA Space Apps 2022 - "Make a Moonquake Map!" Challenge.
 
 [MEWS Demo](https://calvpang.github.io/MEWS_Site/posts/2022-10-02-MEWS/)
 
