@@ -10,25 +10,24 @@ This repository contains the Flat Moon Society's submission for the NASA Space A
 
 ---
 ## High-Level Project Summary
-When they explored the Moon, NASA’s Apollo astronauts left behind several instruments to collect geophysical data near each Apollo landing site. Your challenge is to develop an app that plots the seismic data these instruments transmitted back to Earth on an interactive 3-D globe.
-
 Systems that can provide emergency alerts on Earth have been converging from regional detection sites, into larger systems that can be accessed on a country and global scale. However, this has been a slow process, as even within a country, the sensors used between regions and the way the data is collected varies. As humanity begins to create a base on the moon, which will then be used to expand to other planets, a single, consistent database for storing and using moon data will be essential for timely and safe building of structures and also for creating emergency warning systems for people working on the moon. Our project aims to develop this database and demonstrate its utility.
 
 ## Detailed Project Description
 Our project consists of three main components:
-Database for the storage and dissemination of moonquake data;
-A [visualisation tool](https://calvpang.github.io/MEWS_Site/posts/2022-10-02-MEWS/) to demonstrate the utility of the data as it would be used in one of our apps; and
-The [Moonquake Emergency Warning System](https://flatmoonsociety.my.canva.site/) (MEWS), a three tiered product that provides targeted information to educators, analysts, and remote operators.
+- Database for the storage and dissemination of moonquake data;
+- A [visualisation tool](https://calvpang.github.io/MEWS_Site/posts/2022-10-02-MEWS/) to demonstrate the utility of the data as it would be used in one of our apps; and
+- The [Moonquake Emergency Warning System](https://flatmoonsociety.my.canva.site/) (MEWS), a three tiered product that provides targeted information to educators, analysts, and remote operators.
 
-The MEWS database is designed to be a single point of contact for all Moon related environmental data, starting with historical moonquakes as recorded by the NASA Apollo missions from 1969-1977, and with the capacity to ingest data from new sensors as they are deployed on the Moon. The MWAS database will be public for anyone that wants to contribute or download data. Additionally we will offer [three apps](https://flatmoonsociety.my.canva.site/) which are built on top of the database:
+The MEWS database is designed to be a single point of contact for all Moon related environmental data, starting with historical moonquakes as recorded by the NASA Apollo missions from 1969-1977, and with the capacity to ingest data from new sensors as they are deployed on the Moon. The MEWS database will be public for anyone that wants to contribute or download data. Additionally we will offer [three apps](https://flatmoonsociety.my.canva.site/) which are built on top of the database:
 - MEWS Education Edition for Everyone (eMEWS) to learn more about the moon and explore in a free, open-source platform.
 - MEWS Analytics Platform Edition (MEWS APES) for moon site planners, engineers, SMEs, consultants, space start-ups, risk assessors, and remote operators.
 - MEWS Enterprise Edition (MEWSE) for real-time quake and environmental  monitoring on the Moon at an enterprise level.
 
 We used python to load the data and translate the different formats into one common table. We use the plotly library to visualise a height map of the Moon and to overlay it with the different types of events.
 
-During our hack event we made use the following tools:
+During the hackathon, we made use the following tools:
 - GitHub to host our software and serve the interactive Moon app;
+- Quarto to publish our interactive Moon app;
 - Canva to build and host our sales site, and to create all our animations;
 - Final Cut Pro to record, combine, and edit our 30s pitch video;
 - Google Docs for collaborative editing and planning;
