@@ -63,11 +63,8 @@ Overcoming these challenges takes time and effort and will result in much lower 
 The duration of the space apps challenge was long enough for us to really sink our teeth into a problem and come up with some great ideas, but also short enough that we didn’t get burnt out or bogged down in small details.
 
 ## References
-[Create Interactive Globe + Earthquake Plot in Python with Plotly, Ryota Kiuchi, 2020]
-(https://towardsdatascience.com/create-interactive-globe-earthquake-plot-in-python-b0b52b646f27) 
+[Create Interactive Globe + Earthquake Plot in Python with Plotly, Ryota Kiuchi, 2020](https://towardsdatascience.com/create-interactive-globe-earthquake-plot-in-python-b0b52b646f27) 
 
-[Apollo Passive Seismic Experiment Expanded Event Catalogue, Renee Weber, 2020]
-(https://pds-geosciences.wustl.edu/missions/apollo/seismic_event_catalog.htm)
+[Apollo Passive Seismic Experiment Expanded Event Catalogue, Renee Weber, 2020](https://pds-geosciences.wustl.edu/missions/apollo/seismic_event_catalog.htm)
 
-[CGI Moon Kit, Ernie Wright, 2019]
-(https://svs.gsfc.nasa.gov/cgi-bin/details.cgi?aid=4720) 
+[CGI Moon Kit, Ernie Wright, 2019](https://svs.gsfc.nasa.gov/cgi-bin/details.cgi?aid=4720) 
